@@ -1,0 +1,57 @@
+h1 {
+    font-family: 'Segoe UI', cursive, Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 3px solid rosybrown;
+    border-right: 3px solid rosybrown;
+    text-align: center;
+    box-shadow: 4px 4px 5px slategrey;
+    transition: all 1s;
+    background-color: slategray;
+}
+
+.square {
+    width: 400px;
+    height: 400px;
+    background-color: rgba(25, 125, 192, 0.938);
+}
+
+
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent ;
+    border-bottom: 400px solid rgba(255, 238, 0, 0.719);
+
+}
+
+@keyframes slidein {
+    from { transform: scaleX(-1); }
+    to { transform: scaleX(1); }
+
+}
+
+.triangle-up:hover {
+    transition: all 1s;
+    animation: 3s ease-in-out 1s infinite reverse both running slidein;
+}
+
+.door {
+    position: relative;
+    right: 25px;
+    bottom: -250px;
+    left: 150px;
+    width: 90px;
+    height: 150px;
+    background-color: red;
+
+}
+
+.setting {
+    font-style: italic;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* .bx bx-heart {
+    background-color: red;
+} */
